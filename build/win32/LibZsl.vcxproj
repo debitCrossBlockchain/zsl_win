@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\zsl\api\ZslApi.h" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_g1.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_g2.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_init.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_pairing.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_pp.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\curve_utils.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\public_params.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\basic_radix2_domain.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\basic_radix2_domain_aux.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\extended_radix2_domain.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\step_radix2_domain.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\evaluation_domain.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\exponentiation\exponentiation.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\bigint.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\field_utils.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\fp.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\fp12_2over3over2.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\fp2.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\fp6_3over2.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\knowledge_commitment\knowledge_commitment.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\kc_multiexp.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\multiexp.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\wnaf.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\data_structures\accumulation_vector.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\data_structures\merkle_tree.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\data_structures\sparse_vector.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\default_types\ec_pp.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\default_types\r1cs_ppzksnark_pp.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\profiling.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\rng.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\serialization.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\common\utils.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadget.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\basic_gadgets.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\crh_gadget.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\digest_selector_gadget.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\hash_io.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\knapsack\knapsack_gadget.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_aux.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_components.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_gadget.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\merkle_tree\merkle_authentication_path_variable.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\merkle_tree\merkle_tree_check_read_gadget.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\pb_variable.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\protoboard.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\libzsl.h" />
+    <ClInclude Include="..\..\src\zsl\libsnark\reductions\r1cs_to_qap\r1cs_to_qap.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\relations\arithmetic_programs\qap\qap.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\relations\constraint_satisfaction_problems\r1cs\r1cs.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\relations\variable.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\zk_proof_systems\ppzksnark\r1cs_ppzksnark\r1cs_ppzksnark.hpp" />
+    <ClInclude Include="..\..\src\zsl\libsnark\zk_proof_systems\ppzksnark\r1cs_ppzksnark\r1cs_ppzksnark_params.hpp" />
+    <ClInclude Include="..\..\src\zsl\utils\byteswap.h" />
+    <ClInclude Include="..\..\src\zsl\utils\common.h" />
+    <ClInclude Include="..\..\src\zsl\utils\endian.h" />
+    <ClInclude Include="..\..\src\zsl\utils\Note.h" />
+    <ClInclude Include="..\..\src\zsl\utils\NoteEncryption.h" />
+    <ClInclude Include="..\..\src\zsl\utils\sha256.h" />
+    <ClInclude Include="..\..\src\zsl\utils\ZSLMerkleTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\zsl\libsnark\algebra\curves\curve_utils.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\basic_radix2_domain.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\basic_radix2_domain_aux.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\extended_radix2_domain.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\step_radix2_domain.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\evaluation_domain.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\exponentiation\exponentiation.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\bigint.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\field_utils.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp12_2over3over2.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp2.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp6_3over2.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp_aux.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\knowledge_commitment\knowledge_commitment.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\kc_multiexp.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\multiexp.tcc" />
+    <None Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\wnaf.tcc" />
+    <None Include="..\..\src\zsl\libsnark\common\data_structures\accumulation_vector.tcc" />
+    <None Include="..\..\src\zsl\libsnark\common\data_structures\merkle_tree.tcc" />
+    <None Include="..\..\src\zsl\libsnark\common\data_structures\sparse_vector.tcc" />
+    <None Include="..\..\src\zsl\libsnark\common\rng.tcc" />
+    <None Include="..\..\src\zsl\libsnark\common\serialization.tcc" />
+    <None Include="..\..\src\zsl\libsnark\common\utils.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadget.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\basic_gadgets.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\digest_selector_gadget.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\hash_io.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\knapsack\knapsack_gadget.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_aux.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_components.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_gadget.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\merkle_tree\merkle_authentication_path_variable.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\merkle_tree\merkle_tree_check_read_gadget.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\pb_variable.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\protoboard.tcc" />
+    <None Include="..\..\src\zsl\libsnark\gadgets.tcc" />
+    <None Include="..\..\src\zsl\libsnark\reductions\r1cs_to_qap\r1cs_to_qap.tcc" />
+    <None Include="..\..\src\zsl\libsnark\relations\arithmetic_programs\qap\qap.tcc" />
+    <None Include="..\..\src\zsl\libsnark\relations\constraint_satisfaction_problems\r1cs\r1cs.tcc" />
+    <None Include="..\..\src\zsl\libsnark\relations\variable.tcc" />
+    <None Include="..\..\src\zsl\libsnark\zk_proof_systems\ppzksnark\r1cs_ppzksnark\r1cs_ppzksnark.tcc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\zsl\api\ZslApi.cpp" />
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_g1.cpp" />
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_g2.cpp" />
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_init.cpp" />
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_pairing.cpp" />
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_pp.cpp" />
+    <ClCompile Include="..\..\src\zsl\libsnark\common\profiling.cpp" />
+    <ClCompile Include="..\..\src\zsl\libsnark\common\utils.cpp" />
+    <ClCompile Include="..\..\src\zsl\libsnark\libzsl.cpp" />
+    <ClCompile Include="..\..\src\zsl\main.cpp" />
+    <ClCompile Include="..\..\src\zsl\utils\Note.cpp" />
+    <ClCompile Include="..\..\src\zsl\utils\NoteEncryption.cpp" />
+    <ClCompile Include="..\..\src\zsl\utils\sha256.cpp" />
+    <ClCompile Include="..\..\src\zsl\utils\ZSLMerkleTree.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D58FF4EF-7C9E-4B37-A12D-163609DF1A1B}</ProjectGuid>
+    <RootNamespace>zsl</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\dbin\</OutDir>
+    <IntDir>$(SolutionDir)\msvcinter\$(ProjectName)\$(ConfigurationName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\bin\</OutDir>
+    <IntDir>$(SolutionDir)\msvcinter\$(ProjectName)\$(ConfigurationName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;CURVE_ALT_BN128;BINARY_OUTPUT;HAVE_BYTESWAP_H;MONTGOMERY_OUTPUT;NO_PROCPS;NO_PT_COMPRESSION;__x86_64;PROFILE_OP_COUNTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../src/3rd/basic/include;../../src/3rd/libsodium/include;../../src/zsl/;../../src/3rd/libgmp/include;../../src/zsl/libsnark;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableModules>false</EnableModules>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>gmp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../build/win32/dbin;../../src/3rd/basic/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;CURVE_ALT_BN128;BINARY_OUTPUT;HAVE_BYTESWAP_H;MONTGOMERY_OUTPUT;MULTICORE;NO_PROCPS;NO_PT_COMPRESSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../src/3rd/basic/include;../../src/3rd/libsodium/include;../../src/zsl/;../../src/3rd/libgmp/include;../../src/zsl/libsnark;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableModules>false</EnableModules>
+      <LanguageStandard>Default</LanguageStandard>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalOptions>/MACHINE:X64</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libgmp.lib;libsodium.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../build/win32/dbin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalOptions>/MACHINE:X64</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../../src/3rd/libsodium/include;../../src/zsl/;../../src/3rd/libgmp/include;../../src/zsl/libsnark;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;CURVE_ALT_BN128;BINARY_OUTPUT;HAVE_BYTESWAP_H;MONTGOMERY_OUTPUT;NO_PROCPS;NO_PT_COMPRESSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libgmp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../src/3rd/basic/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../../src/3rd/libsodium/include;../../src/zsl/;../../src/3rd/libgmp/include;../../src/zsl/libsnark;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;CURVE_ALT_BN128;BINARY_OUTPUT;HAVE_BYTESWAP_H;MONTGOMERY_OUTPUT;NO_PROCPS;NO_PT_COMPRESSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libgmp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../src/3rd/basic/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

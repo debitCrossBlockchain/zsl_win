@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="utils">
+      <UniqueIdentifier>{2b4db19d-23e0-48b3-b998-ddd2cd68dff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libsnark">
+      <UniqueIdentifier>{54cc8ea4-f9f5-4f67-9f57-b817ea23811c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api">
+      <UniqueIdentifier>{3e306989-3cfa-4fff-97df-f987d11454d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\data_structures\accumulation_vector.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_g1.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_g2.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_init.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_pairing.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_pp.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\basic_gadgets.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\basic_radix2_domain.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\basic_radix2_domain_aux.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\bigint.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\crh_gadget.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\curve_utils.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\digest_selector_gadget.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\hash_io.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\default_types\ec_pp.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\evaluation_domain.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\exponentiation\exponentiation.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\extended_radix2_domain.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\field_utils.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\fp.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\fp2.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\fp6_3over2.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\fields\fp12_2over3over2.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadget.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\kc_multiexp.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\multiexp.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\wnaf.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\knapsack\knapsack_gadget.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\knowledge_commitment\knowledge_commitment.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\merkle_tree\merkle_authentication_path_variable.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\merkle_tree\merkle_tree_check_read_gadget.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\data_structures\merkle_tree.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\pb_variable.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\protoboard.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\profiling.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\curves\public_params.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\relations\arithmetic_programs\qap\qap.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\relations\constraint_satisfaction_problems\r1cs\r1cs.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\zk_proof_systems\ppzksnark\r1cs_ppzksnark\r1cs_ppzksnark.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\zk_proof_systems\ppzksnark\r1cs_ppzksnark\r1cs_ppzksnark_params.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\default_types\r1cs_ppzksnark_pp.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\reductions\r1cs_to_qap\r1cs_to_qap.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\rng.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\serialization.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\utils.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_aux.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_components.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_gadget.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\common\data_structures\sparse_vector.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\step_radix2_domain.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\relations\variable.hpp">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\utils\common.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\utils\Note.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\utils\NoteEncryption.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\utils\sha256.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\utils\ZSLMerkleTree.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\api\ZslApi.h">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\libsnark\libzsl.h">
+      <Filter>libsnark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\utils\byteswap.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\zsl\utils\endian.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\zsl\libsnark\common\data_structures\accumulation_vector.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\basic_gadgets.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\basic_radix2_domain.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\basic_radix2_domain_aux.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\bigint.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\curves\curve_utils.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\digest_selector_gadget.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\hash_io.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\evaluation_domain.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\exponentiation\exponentiation.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\extended_radix2_domain.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\field_utils.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp_aux.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp2.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp6_3over2.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\fields\fp12_2over3over2.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadget.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\kc_multiexp.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\multiexp.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\scalar_multiplication\wnaf.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\knapsack\knapsack_gadget.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\knowledge_commitment\knowledge_commitment.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\merkle_tree\merkle_authentication_path_variable.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\merkle_tree\merkle_tree_check_read_gadget.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\common\data_structures\merkle_tree.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\pb_variable.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\protoboard.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\relations\arithmetic_programs\qap\qap.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\relations\constraint_satisfaction_problems\r1cs\r1cs.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\zk_proof_systems\ppzksnark\r1cs_ppzksnark\r1cs_ppzksnark.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\reductions\r1cs_to_qap\r1cs_to_qap.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\common\rng.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\common\serialization.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\common\utils.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_aux.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_components.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgetlib1\gadgets\hashes\sha256\sha256_gadget.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\common\data_structures\sparse_vector.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\algebra\evaluation_domain\domains\step_radix2_domain.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\relations\variable.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+    <None Include="..\..\src\zsl\libsnark\gadgets.tcc">
+      <Filter>libsnark</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_g1.cpp">
+      <Filter>libsnark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_g2.cpp">
+      <Filter>libsnark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_init.cpp">
+      <Filter>libsnark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_pairing.cpp">
+      <Filter>libsnark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\libsnark\algebra\curves\alt_bn128\alt_bn128_pp.cpp">
+      <Filter>libsnark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\libsnark\common\profiling.cpp">
+      <Filter>libsnark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\libsnark\common\utils.cpp">
+      <Filter>libsnark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\utils\Note.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\utils\NoteEncryption.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\utils\sha256.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\utils\ZSLMerkleTree.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\main.cpp" />
+    <ClCompile Include="..\..\src\zsl\api\ZslApi.cpp">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\zsl\libsnark\libzsl.cpp">
+      <Filter>libsnark</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
